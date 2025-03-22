@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px){
+/* @media screen and (max-width: 650px){
     header{
         padding: 0 10px;
     }
@@ -64,5 +64,691 @@
     .stones-img{
         margin-top: 80%;
         width: 400px;
+    }
+} */
+
+
+/* ------------------------------
+RESPONSIVE STYLES
+------------------------------ */
+
+/* BIG SCREEN (1200px - 1400px) */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .hero-info h1, .gaming-text {
+        font-size: 100px;
+    }
+    .next-btn {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* LAPTOP (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-info h1, .gaming-text {
+        font-size: 90px;
+    }
+    .next-btn {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* TABLET (768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-info h1, .gaming-text {
+        font-size: 80px;
+    }
+    .hero-info {
+        top: 60px;
+        left: 30px;
+    }
+    .next-btn {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* MOBILE (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .hero-info h1, .gaming-text {
+        font-size: 75px;
+    }
+    .hero-info {
+        top: 40px;
+        left: 20px;
+    }
+    .next-btn {
+        width: 120px;
+        height: 120px;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+    }
+}
+
+/* EXTRA SMALL MOBILE (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .hero-info h1, .gaming-text {
+        font-size: 70px;
+    }
+    .hero-info {
+        top: 30px;
+        left: 15px;
+    }
+    .next-btn {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        left: 50%;
+        bottom: 35%;
+        transform: translateX(-50%);
+    }
+}
+
+/*--------------------About Section------------------------*/
+
+/* ===================== BIG SCREEN (Desktop) ===================== */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .about-section {
+        margin-top: 220px;
+    }
+    
+    .about-section h1 {
+        font-size: 100px;
+    }
+
+    .image-box {
+        width: 450px;
+        height: 650px;
+    }
+
+    .about-section p {
+        font-size: 18px;
+    }
+
+    .stones-img {
+        width: 600px;
+        margin-top: 30%;
+    }
+}
+
+/* ===================== LAPTOP ===================== */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .about-section {
+        margin-top: 180px;
+    }
+
+    .about-section h1 {
+        font-size: 70px;
+    }
+
+    .image-box {
+        width: 400px;
+        height: 580px;
+    }
+
+    .about-section p {
+        font-size: 18px;
+    }
+
+    .stones-img {
+        width: 500px;
+        margin-top: 20%;
+    }
+}
+
+/* ===================== TABLET ===================== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .about-section {
+        margin-top: 150px;
+    }
+
+    .about-section h1 {
+        font-size: 65px;
+    }
+
+    .image-box {
+        width: 350px;
+        height: 500px;
+    }
+
+    .about-section p {
+        font-size: 20px;
+    }
+
+    .stones-img {
+        width: 450px;
+        margin-top: 40%;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .about-section {
+        margin-top: 100px;
+    }
+
+    .about-section h1 {
+        font-size: 40px;
+    }
+
+    .image-box {
+        width: 300px;
+        height: 450px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+
+    .stones-img {
+        width: 350px;
+        margin-top: 42%;
+    }
+}
+
+/* ===================== EXTRA SMALL MOBILE ===================== */
+@media screen and (max-width: 480px) {
+    .about-section {
+        margin-top: 80px;
+    }
+
+    .about-section h1 {
+        font-size: 40px;
+    }
+
+    .image-box {
+        width: 280px;
+        height: 400px;
+    }
+
+    .about-section p {
+        font-size: 12px;
+    }
+
+    .stones-img {
+        width: 300px;
+        margin-top: 45%;
+    }
+}
+
+
+/*---------------------------Info Section--------------------------*/
+
+
+/* ===================== BIG SCREEN (Desktop) ===================== */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .info-section {
+        margin-top: 180px;
+        width: 70%;
+    }
+
+    .info-section h3 {
+        font-size: 40px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+    }
+
+    .info-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .card {
+        height: 45vh;
+    }
+
+    .card h1 {
+        font-size: 50px;
+        max-width: 200px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card button {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+}
+
+/* ===================== LAPTOP ===================== */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .info-section {
+        margin-top: 160px;
+        width: 80%;
+    }
+
+    .info-section h3 {
+        font-size: 35px;
+    }
+
+    .info-section p {
+        font-size: 15px;
+    }
+
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        height: 50vh;
+    }
+
+    .card h1 {
+        font-size: 45px;
+        max-width: 180px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .card button {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+}
+
+/* ===================== TABLET ===================== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .info-section {
+        margin-top: 120px;
+        width: 90%;
+    }
+
+    .info-section h3 {
+        font-size: 30px;
+    }
+
+    .info-section p {
+        font-size: 14px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        height: 55vh;
+    }
+
+    .card h1 {
+        font-size: 40px;
+        max-width: 170px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 767px) {
+    .info-section {
+        margin-top: 100px;
+        width: 95%;
+    }
+
+    .info-section h3 {
+        font-size: 25px;
+    }
+
+    .info-section p {
+        font-size: 13px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        height: 60vh;
+    }
+
+    .card h1 {
+        font-size: 35px;
+        max-width: 150px;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+
+    .card button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+
+/* ===================== EXTRA SMALL MOBILE ===================== */
+@media screen and (max-width: 480px) {
+    .info-section {
+        margin-top: 80px;
+        width: 95%;
+    }
+
+    .info-section h3 {
+        font-size: 22px;
+    }
+
+    .info-section p {
+        font-size: 12px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        height: 70vh;
+    }
+
+    .card h1 {
+        font-size: 30px;
+        max-width: 130px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+
+    .card button {
+        font-size: 11px;
+        padding: 8px 12px;
+    }
+}
+
+
+/*---------------------Contact Section---------------*/
+
+/* ===================== BIG SCREEN (Desktop) ===================== */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .contact-section {
+        margin-top: 150px;
+    }
+
+    .contact-section h1 {
+        font-size: 80px;
+    }
+
+    .contact-section p {
+        font-size: 18px;
+    }
+
+    .contact-section .img1 {
+        height: 450px;
+        top: 5%;
+        right: 25px;
+    }
+
+    .contact-section .img2 {
+        height: 220px;
+        top: 15px;
+        left: 70px;
+    }
+
+    .contact-section .img3 {
+        height: 280px;
+        width: 280px;
+        bottom: 10%;
+        left: 10%;
+    }
+}
+
+/* ===================== LAPTOP ===================== */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .contact-section {
+        margin-top: 130px;
+    }
+
+    .contact-section h1 {
+        font-size: 70px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .contact-section .img1 {
+        height: 400px;
+        top: 10%;
+        right: 20px;
+    }
+
+    .contact-section .img2 {
+        height: 200px;
+        top: 10px;
+        left: 50px;
+    }
+
+    .contact-section .img3 {
+        height: 250px;
+        width: 250px;
+        bottom: 5%;
+        left: 5%;
+    }
+}
+
+/* ===================== TABLET ===================== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-section {
+        margin-top: 100px;
+    }
+
+    .contact-section h1 {
+        font-size: 60px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-section .img1 {
+        height: 350px;
+        top: 15%;
+        right: 15px;
+    }
+
+    .contact-section .img2 {
+        height: 180px;
+        top: 10px;
+        left: 40px;
+    }
+
+    .contact-section .img3 {
+        height: 220px;
+        width: 220px;
+        bottom: 8%;
+        left: 5%;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 767px) {
+    .contact-section {
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section h1 {
+        font-size: 50px;
+    }
+
+    .contact-section p {
+        font-size: 13px;
+    }
+
+    .contact-section .img1 {
+        height: 300px;
+        top: 20%;
+        right: 10px;
+    }
+
+    .contact-section .img2 {
+        height: 150px;
+        top: 10px;
+        left: 30px;
+    }
+
+    .contact-section .img3 {
+        height: 200px;
+        width: 200px;
+        bottom: 10%;
+        left: 5%;
+    }
+}
+
+/* ===================== EXTRA SMALL MOBILE ===================== */
+@media screen and (max-width: 480px) {
+    .contact-section {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section h1 {
+        font-size: 40px;
+    }
+
+    .contact-section p {
+        font-size: 12px;
+    }
+
+    .contact-section .img1 {
+        height: 250px;
+        top: 25%;
+        right: 5px;
+    }
+
+    .contact-section .img2 {
+        height: 120px;
+        top: 10px;
+        left: 20px;
+    }
+
+    .contact-section .img3 {
+        height: 180px;
+        width: 180px;
+        bottom: 15%;
+        left: 5%;
+    }
+}
+
+
+/*------------------------Footer section------------------------*/
+
+/* ===================== BIG SCREEN (Desktop) ===================== */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .footer {
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    .footer ul {
+        margin-right: 120px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+}
+
+/* ===================== LAPTOP ===================== */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer {
+        height: 90px;
+        justify-content: space-between;
+    }
+
+    .footer ul {
+        margin-right: 100px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+}
+
+/* ===================== TABLET ===================== */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        height: 80px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer ul {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .footer a {
+        padding: 5px 5px;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer ul {
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer a {
+        padding: 5px 5px;
+        margin: 5px;
+    }
+}
+
+/* ===================== EXTRA SMALL MOBILE ===================== */
+@media screen and (max-width: 480px) {
+    .footer {
+        height: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer a {
+        padding: 4px 4px;
+        margin: 3px;
     }
 }

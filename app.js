@@ -1,3 +1,18 @@
+// Mobile Nav Menu //
+
+const menuToggle = document.getElementById('menuToggle');
+const closeMenu = document.getElementById('closeMenu');
+const mobileNav = document.getElementById('mobileNav');
+
+menuToggle.addEventListener('click', () => {
+    mobileNav.classList.add('active');
+});
+
+closeMenu.addEventListener('click', () => {
+    mobileNav.classList.remove('active');
+});
+
+
 const nextButton = document.querySelector('.next-btn');
 const video = document.querySelector('.hero-video');
 

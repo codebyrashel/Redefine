@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -24,7 +24,7 @@ header {
     justify-content: space-between;
     padding: 10px 40px;
     z-index: 999;
-    background-color: #4b4b4b5b;
+    background-color: rgba(75, 75, 75, 0.5);
     backdrop-filter: blur(10px);
 }
 
@@ -52,8 +52,10 @@ header {
     opacity: 0.7;
 }
 
-.head-right {
+.head-right{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .head-right a {
@@ -61,6 +63,98 @@ header {
     padding-left: 25px;
     color: white;
     font-size: 15px;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 400vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right 0.5s ease-in-out;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 35px;
+}
+
+.close-menu {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.mobile-nav ul li {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.mobile-nav.active ul li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mobile-nav ul li:nth-child(1) { transition-delay: 0.2s; }
+.mobile-nav ul li:nth-child(2) { transition-delay: 0.4s; }
+.mobile-nav ul li:nth-child(3) { transition-delay: 0.6s; }
+.mobile-nav ul li:nth-child(4) { transition-delay: 0.8s; }
+.mobile-nav ul li:nth-child(5) { transition-delay: 1s; }
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .head-right {
+        display: none;
+    }
 }
 
 .hero-section {
@@ -176,7 +270,7 @@ header {
 }
 
 .about-section p {
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .about-section h1 {
